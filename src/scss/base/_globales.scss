@@ -1,0 +1,83 @@
+@use '../base/variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: v.$fuente_title;
+    background-color: darken(v.$primary_color, 10%);
+    margin: 0;
+    &.fijar-body{
+        overflow: hidden;
+    }
+}
+p{
+    font-size: 1.8rem;
+    color: v.$blanco;
+    font-weight: 400;
+    font-family: v.$fuente_text;
+}
+.contenedor{
+    width: 95%;
+    max-width: 90rem;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+a{
+    text-decoration: none;
+    font-family: v.$fuente_title;
+}
+h1,h2{
+    color: v.$blanco;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+h3{
+    font-size: 2.8rem;
+    color: v.$blanco;
+}
+h4{
+    font-size: 2.4rem;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+.margin-none{
+    margin: 0;
+}
+.icon-tabler-brand-spotify{
+    &:hover{
+        stroke: rgb(8, 252, 0);
+    }
+    
+}
+.icon-tabler-brand-youtube{
+    &:hover{
+        stroke: rgb(252, 0, 0);
+    }
+}
+.icon-tabler-brand-facebook{
+    &:hover{
+        stroke: rgb(25, 67, 145);
+    }
+}
+.icon-tabler-brand-instagram{
+    &:hover{
+        stroke: v.$secondary_color;
+    }
+}

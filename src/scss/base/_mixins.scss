@@ -1,0 +1,37 @@
+@use '../base/variables' as v; //Importamos las variables
+
+//Creamos un mixin para el tamaño de pantalla de un celular
+@mixin celphone {
+    //usamor @content para indicar que habrá contenido css en ese bloque
+    @media (min-width: v.$celphone){
+        @content 
+    }
+};
+
+@mixin tablet {
+    @media (min-width: v.$tablet){
+        @content
+    }
+};
+
+@mixin desktop {
+    @media (min-width: v.$desktop){
+        @content
+    }
+};
+
+@mixin desktopXL {
+    @media (min-width: v.$desktopXL){
+        @content
+    }
+};
+@mixin grid($column, $space){
+    display: grid;
+    grid-template-columns: repeat($column, 1fr);
+    gap: $space;
+}
+@mixin resetlist{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

@@ -1,0 +1,39 @@
+//Fuentes
+$fuente_title: 'PT Sans', sans-serif;
+$fuente_text: 'Heebo', sans-serif;
+
+//Colores
+$primary_color: #1b1a1a;
+$secondary_color: #e0349e;
+$secondary_color-2: #f75b34;
+$rojo: #9e0000;
+$negro: #0101;
+$blanco: #fff;
+$gris: #BBB;
+
+//Tamaño de Media Queris
+$celphone: 480px;
+$tablet: 768px;
+$desktop: 962px;
+$desktopXL: 1200px;
+
+
+@keyframes fade-up{
+    0% {
+        opacity: 0;
+        transform: translateY(3rem) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes escalar{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.05)
+    }
+}

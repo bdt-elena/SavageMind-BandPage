@@ -1,0 +1,31 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.inicio{
+
+    h2{
+       
+        @include m.tablet {
+            text-align: center;
+            margin-bottom: 2rem;
+        };
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .texto{
+        margin-bottom: 3rem; 
+    }
+    .inicio__img{
+        margin: 3rem auto;
+        //border: 2px solid v.$secondary_color;
+        p{
+            font-weight: 400;
+            color: darken(v.$blanco, 50%);
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+    }
+
+}

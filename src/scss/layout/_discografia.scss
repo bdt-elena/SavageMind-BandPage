@@ -1,0 +1,86 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.discografia{
+
+    h2, h3{
+        color: v.$blanco;
+    }
+    h2{
+        text-align: center;
+    }
+    h3{
+        margin: 2rem 0;
+    }
+}
+.discografia__single{
+    
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 40% 60%;
+
+    @include m.tablet {
+        grid-template-columns: 20% 80%;  
+        gap: 2rem;    
+    };
+
+    .discografia__single__foto{
+
+        width: 13rem;
+        height: auto;
+        margin: 0 auto;
+        @include m.tablet {
+            width: 18rem;
+            margin: 0
+        };
+        
+    }
+
+    .discografia__single__info{
+
+        h4{
+            margin: 0; 
+            color: v.$blanco;
+            font-size: 1.6rem;
+
+            @include m.tablet {
+                font-size: 2.4rem;
+            };
+        }
+        p{
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            font-weight: bold;
+            @include m.tablet {
+                font-size: 1.8rem;
+                margin: 1.8rem 0;
+            };
+        }
+        
+        span{
+            font-weight: normal;
+        }
+        .open-spotify{
+            background-color: #1db954;
+            color: v.$blanco;
+            border-radius: 30px;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+
+            @include m.tablet {
+                font-size: 1.8rem;
+                margin-top: 0;
+                padding: 1.3rem 1.5rem;
+            };
+        }
+
+    }
+}
+.iframe{
+    margin-bottom: 2rem;
+}

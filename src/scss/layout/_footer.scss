@@ -1,0 +1,21 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.footer{
+    
+    display: block;
+    padding: 3rem;
+    border-top: 2px solid v.$secondary_color;
+    background-color: darken(v.$primary_color, 20%);
+    text-align: center;
+
+    @include m.celphone {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: none;
+    };
+    h1{
+        color: v.$secondary_color;
+    }
+}
